@@ -12,7 +12,8 @@ const ReactQueryPage = () => {
         retry:1,
         select:(data) => {
             return data.data;
-        }
+        },
+        gcTime:5000
     });
     console.log('data', data, ', isLoading', isLoading);
     console.log('isError', isError, 'error', error);
